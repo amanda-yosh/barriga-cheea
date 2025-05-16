@@ -1,11 +1,11 @@
 export interface ButtonProps {
   label: string;
-  onClickFunction?: () => void;
+  onClickFunction: () => void;
 }
 
 export const Button = ({
   label,
-  onClickFunction = () => { },
+  onClickFunction,
   ...props
 }: ButtonProps) => {
   return (
