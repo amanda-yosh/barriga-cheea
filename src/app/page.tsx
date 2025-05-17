@@ -103,12 +103,58 @@ export default function Home() {
           <Text text='Perguntas frequentes' Tag='h2' />
         </Container>
 
-        <Container>
+        <Container isCol>
           <Text text='ONGs beneficiadas' Tag='h2' />
+
+          <ul className="flex justify-around">
+            <ListItem
+              isCircle
+              title='Projeto Alimentar Bem'
+              image="projeto-alimentar-bem.png"
+              imageAlt={`Frente de um mercado com um letreiro que diz em inglês Don't panic, it's organic.`}
+            />
+
+            <ListItem
+              isCircle
+              title='Cozinha Solidária SC'
+              image="cozinha-solidaria-sc.png"
+              imageAlt='Mão estendida com diversas sementes em vermelho, amarelo e marrom e um fundo gramado verde desfocado'
+            />
+
+            <ListItem
+              isCircle
+              title='ONG Mãos Unidas'
+              image="ong-maos-unidas.png"
+              imageAlt='Duas mãos dadas em tons de cinza na vertical'
+            />
+          </ul>
         </Container>
 
-        <Container>
+        <Container isCol>
           <Text text='Estabelecimentos participantes' Tag='h2' />
+
+          <ul className="flex justify-around">
+            <ListItem
+              isCircle
+              title='Orgânicos da Serra'
+              image="organicos-da-serra.png"
+              imageAlt={`Frente de um mercado com um letreiro que diz em inglês Don't panic, it's organic.`}
+            />
+
+            <ListItem
+              isCircle
+              title='Feira Verde'
+              image="feira-verde.png"
+              imageAlt='Mão estendida com diversas sementes em vermelho, amarelo e marrom e um fundo gramado verde desfocado'
+            />
+
+            <ListItem
+              isCircle
+              title='Mercado São João'
+              image="mercado-sao-joao.png"
+              imageAlt='Bacias com diversos grãos e uma colher para colher'
+            />
+          </ul>
         </Container>
       </main>
 
