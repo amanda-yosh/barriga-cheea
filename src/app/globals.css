@@ -24,3 +24,31 @@ body {
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
 }
+
+@layer utilities {
+  .high-contrast {
+    @apply bg-black text-white;
+  }
+
+  .high-contrast a {
+    @apply text-cyan-400 underline;
+  }
+
+  .high-contrast button {
+    @apply bg-white text-black border border-white;
+  }
+}
+
+@layer utilities {
+  .text-access-small {
+    @apply text-sm;
+  }
+
+  .text-access-base {
+    @apply text-base;
+  }
+
+  .text-access-large {
+    @apply text-lg;
+  }
+}

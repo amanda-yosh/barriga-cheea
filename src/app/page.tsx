@@ -8,6 +8,7 @@ import { Header } from "@/components/Header";
 import { Text } from "@/components/Text";
 import { Footer } from "@/components/Footer";
 import { ListItem } from "@/components/ListItem";
+import { AccessibilityBar } from "@/components/AccessibilityBar";
 
 const howDoWeWorkSteps = [
   {
@@ -50,6 +51,7 @@ export default function Home() {
 
   return (
     <div className="font-[family-name:var(--font-roboto)]">
+      <AccessibilityBar hrefs={["#overview", "#menu", "#footer", "#accessibility"]} />
       <Header />
       <main>
         <Container>
