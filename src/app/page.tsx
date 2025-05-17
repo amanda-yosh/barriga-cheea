@@ -13,31 +13,31 @@ const howDoWeWorkSteps = [
   {
     title: '1. Cadastro',
     text: 'ONGs e fornecedores criam um perfil gratuito.',
-    image: '',
+    image: 'cadastro.svg',
     imageAlt: ''
   },
   {
     title: '2. Oferta de alimentos',
     text: 'Mercados e produtores cadastram alimentos disponíveis.',
-    image: '',
+    image: 'oferta-de-alimentos.svg',
     imageAlt: ''
   },
   {
     title: '3. Coleta',
     text: 'ONGs visualizam e solicitam as doações',
-    image: '',
+    image: 'coleta.svg',
     imageAlt: ''
   },
   {
     title: '4. Entrega/Retirada',
     text: 'Alimentos são coletados e distribuídos.',
-    image: '',
+    image: 'entrega-retirada.svg',
     imageAlt: ''
   },
   {
     title: '5. Impacto real',
     text: 'Tudo é registrado em KGs doados e pessoas alcançadas.',
-    image: '',
+    image: 'impacto-real.svg',
     imageAlt: ''
   },
 ]
@@ -73,18 +73,20 @@ export default function Home() {
           />
         </Container>
 
-        <Container>
+        <Container isCol>
           <Text text='Como nós funcionamos' Tag='h2' />
 
-          {howDoWeWorkSteps.map(({ title, text, image, imageAlt }, index) => (
-            <ListItem
-              key={index}
-              title={title}
-              text={text}
-              image={image}
-              imageAlt={imageAlt}
-            />
-          ))}
+          <ul className="flex flex-wrap items-center justify-center gap-8">
+            {howDoWeWorkSteps.map(({ title, text, image, imageAlt }, index) => (
+              <ListItem
+                key={index}
+                title={title}
+                text={text}
+                image={image}
+                imageAlt={imageAlt}
+              />
+            ))}
+          </ul>
         </Container>
 
         <Container>
@@ -97,6 +99,11 @@ export default function Home() {
 
         <Container>
           <Text text='Calculadora solidária' Tag='h2' />
+
+          <Text
+            text="Calcule o impacto que você pode ter na vida das pessoas e do meio ambiente"
+            Tag='p'
+          />
         </Container>
 
         <Container>
