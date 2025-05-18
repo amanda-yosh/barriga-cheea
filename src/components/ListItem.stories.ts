@@ -12,9 +12,9 @@ type Story = StoryObj<typeof meta>;
 
 export const Default: Story = {
     args: {
-        title: 'Título',
+        title: 'Título (itens)',
         text: 'Subtitulo | Descrição',
         image: 'src/components/assets/barriga-logo.svg',
-        imageAlt: 'Símbolo de um globo',
+        imageAlt: 'Imagem ilustrativa do produto'
     },
 };
