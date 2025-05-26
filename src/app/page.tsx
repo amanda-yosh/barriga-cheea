@@ -56,7 +56,7 @@ export default function Home() {
           <div className="flex flex-col justify-around">
             <div>
               <Text text='QUEM SOMOS' Tag='h2' />
-              <Text text='Barriga Cheea' Tag='h1' />
+              <Text text='Barriga Cheea' Tag='h1' size="display" />
             </div>
 
             <Text text='Somos uma iniciativa que une tecnologia, empatia e sustentabilidade para combater o desperdício de alimentos. Acreditamos no poder das conexões locais para gerar impacto real — diminuindo a fome e valorizando cada alimento produzido.' Tag='p' />
@@ -64,17 +64,21 @@ export default function Home() {
             <Button label='Cadastre-se' onClickFunction={handleOnClickFunction} />
           </div>
 
-          <Image
-            aria-hidden
-            src="/food-plate.png"
-            alt="Globe icon"
-            width={645}
-            height={618}
-          />
+          <div className="min-h-[618px] min-w-[645px]">
+            <Image
+              aria-hidden
+              src="/food-plate.png"
+              alt="Globe icon"
+              width={645}
+              height={618}
+            />
+          </div>
         </Container>
 
         <Container isCol>
-          <Text text='Como nós funcionamos' Tag='h2' />
+          <div className="flex items-center">
+            <Text text='Como nós funcionamos' Tag='h2' />
+          </div>
 
           <ul className="flex flex-wrap items-center justify-center gap-8">
             {howDoWeWorkSteps.map(({ title, text, image, imageAlt }, index) => (
@@ -90,15 +94,15 @@ export default function Home() {
         </Container>
 
         <Container>
-          <Text text='Navegue pela plataforma' Tag='h2' />
+          <Text text='Navegue pela plataforma' Tag='h2' size="display" />
         </Container>
 
         <Container>
-          <Text text='Onde estamos' Tag='h2' />
+          <Text text='Onde estamos' Tag='h2' size="display" />
         </Container>
 
         <Container>
-          <Text text='Calculadora solidária' Tag='h2' />
+          <Text text='Calculadora solidária' Tag='h2' size="display" />
 
           <Text
             text="Calcule o impacto que você pode ter na vida das pessoas e do meio ambiente"
@@ -107,11 +111,11 @@ export default function Home() {
         </Container>
 
         <Container>
-          <Text text='Perguntas frequentes' Tag='h2' />
+          <Text text='Perguntas frequentes' Tag='h2' size="display" />
         </Container>
 
         <Container isCol>
-          <Text text='ONGs beneficiadas' Tag='h2' />
+          <Text text='ONGs beneficiadas' Tag='h2' size="display" />
 
           <ul className="flex justify-around">
             <ListItem
@@ -138,7 +142,7 @@ export default function Home() {
         </Container>
 
         <Container isCol>
-          <Text text='Estabelecimentos participantes' Tag='h2' />
+          <Text text='Estabelecimentos participantes' Tag='h2' size="display" />
 
           <ul className="flex justify-around">
             <ListItem

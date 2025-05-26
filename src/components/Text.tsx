@@ -1,17 +1,21 @@
 import React from 'react';
 
-// sizes
-// 88px titulo das secoes
-// 18px textos num geral
-
 export interface TextProps {
     Tag: React.ElementType,
     text: string,
+    size?: 'display' | 'sub-title' | 'regular' | 'regular-plus'
 }
 
-export const Text = ({ Tag, text }: TextProps) => {
+export const Text = ({ Tag, text, size }: TextProps) => {
+    const sizes = {
+        display: 'text-8xl',
+        'sub-title': 'text-4xl',
+        regular: 'text-lg',
+        'regular-plus': 'text-xl',
+    }
+
     return (
-        <Tag className=''>
+        <Tag className={sizes[size || 'regular']}>
             {text}
         </Tag>
     );
